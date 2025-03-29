@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Coin Signal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🔥</div>
+        <h1>Meme Coin Signal Dashboard</h1>
+        <div class="last-scan">Last scan: <span id="last-scan-time">March 29, 2025 15:24:48</span></div>
+    </header>
+    
+    <div class="subtitle">Monitoring high-potential meme coins across Solana, Ethereum, and BSC</div>
+    
+    <div class="dashboard-container">
+        <div class="stats-container">
+            <div class="stats-card">
+                <h2>Latest Scan Stats</h2>
+                <div class="stat-row">
+                    <div class="stat-label">Total Scanned:</div>
+                    <div class="stat-value">120</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">Passed Basic Filters:</div>
+                    <div class="stat-value">15</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">Qualified:</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">New Alerts:</div>
+                    <div class="stat-value">2</div>
+                </div>
+            </div>
+            
+            <div class="filter-card">
+                <h2>Filter Settings</h2>
+                <div class="filter-row">
+                    <div class="filter-label">Age Threshold:</div>
+                    <div class="filter-value">< 12 hours</div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-label">Liquidity Threshold:</div>
+                    <div class="filter-value">> $50,000</div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-label">Volume Threshold:</div>
+                    <div class="filter-value">> $25,000</div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-label">Sentiment Threshold:</div>
+                    <div class="filter-value">> 60</div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-label">DYOR Threshold:</div>
+                    <div class="filter-value">> 60</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="signals-container">
+            <div class="signals-header">
+                <h2>Latest Signals</h2>
+                <button id="scan-button" class="scan-button">Scan Now</button>
+            </div>
+            
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="token-info">
+                        <span class="token-name">$SPEPE</span>
+                        <span class="token-chain solana">Solana</span>
+                    </div>
+                    <div class="token-scores">
+                        <span class="dyor-score">DYOR: 85</span>
+                        <span class="sentiment-score">Sentiment: 77</span>
+                    </div>
+                </div>
+                <div class="token-description">Super Pepe</div>
+                <div class="signal-details">
+                    <div class="detail-column">
+                        <div class="detail-row">
+                            <div class="detail-label">Liquidity:</div>
+                            <div class="detail-value">$58K</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Volume (1h):</div>
+                            <div class="detail-value">$31K</div>
+                        </div>
+                    </div>
+                    <div class="detail-column">
+                        <div class="detail-row">
+                            <div class="detail-label">Age:</div>
+                            <div class="detail-value">6.5 hours</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Top Influencer:</div>
+                            <div class="detail-value">SolWhaleAlpha</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="signal-actions">
+                    <a href="#" class="chart-link">View Chart</a>
+                </div>
+            </div>
+            
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="token-info">
+                        <span class="token-name">$MDOGE</span>
+                        <span class="token-chain ethereum">Ethereum</span>
+                    </div>
+                    <div class="token-scores">
+                        <span class="dyor-score">DYOR: 75</span>
+                        <span class="sentiment-score">Sentiment: 68</span>
+                    </div>
+                </div>
+                <div class="token-description">Moon Doge</div>
+                <div class="signal-details">
+                    <div class="detail-column">
+                        <div class="detail-row">
+                            <div class="detail-label">Liquidity:</div>
+                            <div class="detail-value">$72K</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Volume (1h):</div>
+                            <div class="detail-value">$45K</div>
+                        </div>
+                    </div>
+                    <div class="detail-column">
+                        <div class="detail-row">
+                            <div class="detail-label">Age:</div>
+                            <div class="detail-value">8.2 hours</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Top Influencer:</div>
+                            <div class="detail-value">CryptoGems</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="signal-actions">
+                    <a href="#" class="chart-link">View Chart</a>
+                </div>
+            </div>
+            
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="token-info">
+                        <span class="token-name">$FLOKI</span>
+                        <span class="token-chain bsc">BSC</span>
+                    </div>
+                    <div class="token-scores">
+                        <span class="dyor-score">DYOR: 70</span>
+                        <span class="sentiment-score">Sentiment: 65</span>
+                    </div>
+                </div>
+                <div class="token-description">Floki Moon</div>
+                <div class="signal-details">
+                    <div class="detail-column">
+                        <div class="detail-row">
+                            <div class="detail-label">Liquidity:</div>
+                            <div class="detail-value">$65K</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Volume (1h):</div>
+                            <div class="detail-value">$28K</div>
+                        </div>
+                    </div>
+                    <div class="detail-column">
+                        <div class="detail-row">
+                            <div class="detail-label">Age:</div>
+                            <div class="detail-value">10.1 hours</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Top Influencer:</div>
+                            <div class="detail-value">BSCWhale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="signal-actions">
+                    <a href="#" class="chart-link">View Chart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="telegram-info">
+        <p>Your Telegram bot <strong>@MemeMaster6923Bot</strong> is configured to send alerts to channel <strong>@mememaster6923</strong>.</p>
+        <p>Alerts will be sent automatically when high-potential meme coins are detected.</p>
+        <p><strong>Sample Alert Format:</strong><br>
+        🔥 New Meme Coin Signal 🔥<br>
+        Token: $SPEPE (Solana)<br>
+        Liquidity: $58K | Volume: $31K<br>
+        Sentiment Score: 77 (Mentioned by SolWhaleAlpha)<br>
+        DYOR Score: 85 ✅<br>
+        Chart: [Birdeye link]</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
